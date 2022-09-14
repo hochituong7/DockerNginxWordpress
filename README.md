@@ -44,17 +44,24 @@ Build a website in your style (creative freedom) with any content. Suggested con
 
 1. Clone source from github by command: 
 ```
-    git clone git@github.com:marketenterprise/Training-Pair2-20220809-Wordpress.git
+git clone git@github.com:marketenterprise/Training-Pair2-20220809-Wordpress.git
 ```
 
 ```
-    cd Training-Pair2-20220809-Wordpress
+cd Training-Pair2-20220809-Wordpress
 ```
+2. Copy .env.example to .env file
 
-3. Run app by docker-compose
+3. Add host domain local (type password user MacOS if require)
 ```
-    docker-compose up
+bash init-cert/add-host.sh
+```
+4. If App installed and run before , please docker compose down and remove volumes db to update init Databases new.
+
+5. Run app by docker-compose
+```
+docker-compose up
 ```
 
 ### Check List
-- You can access app with: http://localhost
+- You can access app with: https://wp-tuonghc7.com
